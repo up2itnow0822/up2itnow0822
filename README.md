@@ -2,6 +2,9 @@
 
 # 🤖 Building the AI Agent Economy
 
+[![Discord](https://img.shields.io/discord/1475549260140253194?label=Community&logo=discord&color=5865F2)](https://discord.gg/958AACqf7Y)
+
+
 **Non-custodial wallets · Agent marketplaces · Autonomous trading**
 
 *The infrastructure layer for a world where AI agents work, earn, and transact freely.*
