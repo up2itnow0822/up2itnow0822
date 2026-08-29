@@ -1,69 +1,47 @@
-<div align="center">
-
-# 🤖 Building the AI Agent Economy
+# Building the AI Agent Economy
 
 [![Discord](https://img.shields.io/discord/1475549260140253194?label=Community&logo=discord&color=5865F2)](https://discord.gg/958AACqf7Y)
 
+**Open-source policy and proof for agents that spend money.**
 
-**Non-custodial wallets · Agent marketplaces · Autonomous trading**
+## The payment trial
 
-*The infrastructure layer for a world where AI agents work, earn, and transact freely.*
+Basic payment execution is becoming commodity infrastructure. We're testing a
+narrower claim: teams won't let buyer agents spend at scale without budgets,
+approval rules, idempotency, receipts, and an audit trail.
 
-</div>
+Three repositories make up that trial:
 
----
+| Repository | Role | Current gate |
+| --- | --- | --- |
+| [agent-wallet-sdk](https://github.com/up2itnow0822/agent-wallet-sdk) | Non-custodial spending policy and signed receipts | One observed external policy-governed transaction |
+| [agentpay-mcp](https://github.com/up2itnow0822/agentpay-mcp) | Policy-aware x402 payment tools for MCP clients | One credible buyer-agent pilot commitment |
+| [agentpay-wallet-starter](https://github.com/up2itnow0822/agentpay-wallet-starter) | Controlled end-to-end proof path | Green CI and one independent completion under 15 minutes |
 
-## 🏗️ What We're Building
+These are trial gates, not claims of product-market fit. Stars, downloads, and
+our own demos don't count as independent use.
 
-The AI agent economy needs three things to function: **identity**, **payment rails**, and **a place to work**. We're building all three.
-
-| Product | What it does | Status |
-|---------|-------------|--------|
-| [**agent-wallet-sdk**](https://github.com/up2itnow0822/agentwallet-sdk) | Non-custodial wallet SDK with ERC-8004 identity + x402 payments | ✅ Live on Base Mainnet |
-| [**clawpay-mcp**](https://github.com/up2itnow0822/clawpay-mcp) | x402 MCP payment layer — agents sign locally, no custodial infra | ✅ Published |
-| [**webmcp-sdk**](https://github.com/up2itnow0822/webmcp-sdk) | Full WebMCP developer toolkit — make any site agent-ready | ✅ Published |
-| [**AgentNexus2**](https://github.com/up2itnow0822/AgentNexus2) | Base-native agent-to-agent payment infrastructure | ✅ Live |
-| [**AlphaWolf**](https://github.com/up2itnow0822/AlphaWolf) | Autonomous crypto trading super-agent (4-pillar architecture) | 🔨 Building |
-| [**ReadyTrader-Crypto**](https://github.com/up2itnow0822/ReadyTrader-Crypto) | MCP trading server — give any AI agent professional trading hands | ✅ Built |
-| [**multi-clob-arb-scanner**](https://github.com/up2itnow0822/multi-clob-arb-scanner) | Independent arb scanner for prediction markets (Polymarket + Kalshi) | ✅ Open Source |
-
----
-
-## 🧠 The Philosophy
-
-> *"Don't build agents that need permission to transact. Build rails that don't require trust."*
-
-**Local-first. Non-custodial. Agent-native.**
-
-Every product we ship follows three rules:
-1. **Agents own their keys** — no custodial intermediaries
-2. **Open source by default** — the infrastructure layer must be inspectable
-3. **Revenue-first** — tools that generate real value fund the research
-
----
-
-## 📦 On npm
+## Try the current packages
 
 ```bash
-npm install agentwallet-sdk   # Non-custodial agent wallets
-npm install clawpay-mcp       # x402 MCP payments  
-npm install webmcp-sdk        # WebMCP developer toolkit
+npm install agentwallet-sdk
+npx -y agentpay-mcp
 ```
 
----
+For the combined path, start with the
+[wallet starter](https://github.com/up2itnow0822/agentpay-wallet-starter).
 
-## 🔗 Links
+## How we build
 
-- 🌐 [ai-agent-economy.com](https://ai-agent-economy.com)
-- 💬 [Discord Community](https://discord.gg/8XSuwVBsxR)
-- 📰 [The Oracle](https://up2itnow.substack.com) — Prediction market intelligence
+- Agents keep control of their keys.
+- Spending decisions produce portable evidence.
+- Claims stay bounded by tests, external use, and paid outcomes.
+- Recursive self-improvement work must clear reproducible benchmark gates.
 
----
+## Links
 
-<div align="center">
+- [AI Agent Economy](https://ai-agent-economy.com/#products)
+- [Discord community](https://discord.gg/958AACqf7Y)
+- [GitHub repositories](https://github.com/up2itnow0822?tab=repositories)
 
-*We're in the early days of agent-to-agent commerce. The infrastructure being built now will power the next decade of autonomous AI work.*
-
-**⭐ Star a repo. Open a PR. Join the build.**
-
-</div>
+Read the code before you trust the pitch. Issues and pull requests are welcome.
