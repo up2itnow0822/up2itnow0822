@@ -2,13 +2,13 @@
 
 [![Discord](https://img.shields.io/discord/1475549260140253194?label=Community&logo=discord&color=5865F2)](https://discord.gg/958AACqf7Y)
 
-**Open-source policy and proof for agents that spend money.**
+**Open-source infrastructure for AI agents.**
 
 ## How we build
 
-- Agents keep control of their keys.
-- Spending decisions produce portable evidence.
-- Claims stay bounded by tests, external use, and paid outcomes.
+- Clear, auditable guardrails for what agents can do.
+- Agent decisions produce portable evidence.
+- Claims stay bounded by tests, external use, and measured outcomes.
 - Recursive self-improvement work must clear reproducible benchmark gates.
 
 ## Links
